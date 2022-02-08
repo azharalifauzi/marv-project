@@ -1,1 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Aliens & cows';
+  src: url('/assets/fonts/Alienscows-Trial.woff2') format('woff2'),
+    url('/assets/fonts/Alienscows-Trial.ttf') format('truetype');
+}

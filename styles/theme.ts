@@ -7,14 +7,16 @@ export const colors = {
     secondary: '#BD9940',
     black: '#333333',
     'gray-1': '#C4C4C4',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    lightblue: '#CBD5E0'
   }
 };
 
-export const fonts: Theme['fonts'] = {
+export const fonts: Partial<Theme['fonts']> & { [key: string]: string } = {
   heading: "'Libre Baskerville', serif",
   body: "'Libre Baskerville', serif",
-  mono: "'Libre Baskerville', serif"
+  mono: "'Libre Baskerville', serif",
+  aliencow: "'Aliens & cows', serif"
 };
 
 const theme = extendTheme({ colors, fonts });
