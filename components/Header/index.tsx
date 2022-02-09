@@ -106,7 +106,7 @@ const Header = () => {
                   as="li"
                   _hover={{ color: 'brand.secondary' }}
                 >
-                  <Link href="/kostum-furniture">
+                  <Link href="/custom-furniture">
                     <a>KOSTUM FURNITURE</a>
                   </Link>
                 </Box>

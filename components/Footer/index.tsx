@@ -86,7 +86,7 @@ const Footer = () => {
                   </Text>
                 </a>
               </Link>
-              <Link href="/kostum-furniture">
+              <Link href="/custom-furniture">
                 <a>
                   <Text fontSize="sm" _hover={{ color: 'brand.secondary' }}>
                     Kostum Furniture

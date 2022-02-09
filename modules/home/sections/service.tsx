@@ -9,22 +9,22 @@ const Service = () => {
       <Grid gridTemplateColumns="repeat(4, 1fr)" gap="16">
         <ServiceLink
           src="/assets/images/service-design-interior.png"
-          href="/"
+          href="/desain-interior"
           title="Desain Interior"
         />
         <ServiceLink
           src="/assets/images/service-design-architecture.png"
-          href="/"
+          href="/desain-arsitek"
           title="Desain Arsitektur"
         />
         <ServiceLink
           src="/assets/images/service-construction.png"
-          href="/"
-          title="Jasa Konstruksi"
+          href="/jasa-pembangunan"
+          title="Jasa Pembangunan"
         />
         <ServiceLink
           src="/assets/images/service-custom-furniture.png"
-          href="/"
+          href="/custom-furniture"
           title="Custom Furniture"
         />
       </Grid>
