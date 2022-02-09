@@ -6,9 +6,9 @@ import SectionTitle from '../components/section-title';
 
 const About = () => {
   return (
-    <Container maxW="container.xl" py="20">
+    <Container maxW="container.xl" py="20" as="section">
       <SectionTitle mb="9">Tentang Kami</SectionTitle>
-      <Text ml="7" mb="20">
+      <Text ml="7" mb="20" maxW="70%">
         MARV Studio <br /> Hadir sebagai konsultan desain interior, desain
         arsitek, jasa pembangunan, costum furniture dan kabinet yang berlokasi
         di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang
