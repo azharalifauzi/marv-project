@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useState } from 'react';
 import 'swiper/css';
+import ImageDecorator from './components/image-decorator';
 import PortfolioSwiper from './components/portfolio-swiper';
 
 interface DesainInteriorProps {
@@ -27,38 +28,20 @@ const DesainInterior: React.FC<DesainInteriorProps> = ({ swiperItems }) => {
             objectFit="cover"
             objectPosition="center"
           />
-          <Box
-            bg="brand.primary"
-            textAlign="center"
-            position="absolute"
+          <ImageDecorator
             top="16"
             left="0"
-            color="brand.white"
-            px="4"
-            py="2"
             transform="translateX(-50%)"
-          >
-            <Text fontWeight="bold">Desainer Professional</Text>
-            <Text maxW="234px">
-              Marv memiliki tim desainer yang profesional dan berpengalaman.
-            </Text>
-          </Box>
-          <Box
-            bg="brand.primary"
-            textAlign="center"
-            position="absolute"
+            title="Desainer Professional"
+            description="Marv memiliki tim desainer yang profesional dan berpengalaman."
+          />
+          <ImageDecorator
             bottom="16"
             right="0"
-            color="brand.white"
-            px="4"
-            py="2"
             transform="translateX(50%)"
-          >
-            <Text fontWeight="bold">Desain yang berkelas</Text>
-            <Text maxW="234px">
-              Memadukan tren dengan desain yang anda inginkan.
-            </Text>
-          </Box>
+            title="Desain yang berkelas"
+            description="Memadukan tren dengan desain yang anda inginkan."
+          />
         </Box>
       </Flex>
       <PortfolioSwiper
