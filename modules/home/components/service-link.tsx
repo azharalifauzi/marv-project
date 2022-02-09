@@ -19,7 +19,7 @@ const ServiceLink: React.FC<ServiceLinkProps> = ({ href, title, src }) => {
           fontSize="xl"
           fontWeight="bold"
           textAlign="center"
-          _groupHover={{ color: 'brand.primary' }}
+          _groupHover={{ color: 'brand.secondary' }}
         >
           {title}
         </Text>

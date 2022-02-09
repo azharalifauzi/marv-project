@@ -4,7 +4,7 @@ import ServiceLink from '../components/service-link';
 
 const Service = () => {
   return (
-    <Container maxW="container.xl" as="section" pb="20">
+    <Container maxW="container.xl" as="section" pb="20" id="jasa-kami">
       <SectionTitle mb="24">Jasa Kami</SectionTitle>
       <Grid gridTemplateColumns="repeat(4, 1fr)" gap="16">
         <ServiceLink

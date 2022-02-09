@@ -4,7 +4,7 @@ import TestimonialCard from '../components/testimonial-card';
 
 const Testimonial = () => {
   return (
-    <Container maxW="container.xl" as="section" py="20">
+    <Container maxW="container.xl" as="section" py="20" id="testimonial">
       <SectionTitle mb="24">Testimonial</SectionTitle>
       <Grid gridTemplateColumns="repeat(2, 1fr)" gap="20" mb="36">
         <TestimonialCard
@@ -24,7 +24,13 @@ const Testimonial = () => {
         <Text fontSize="2xl" fontWeight="bold" color="brand.secondary" mb="7">
           Berapa biaya desain interior?
         </Text>
-        <chakra.button bg="brand.gray-1" py="2" px="6" color="brand.primary">
+        <chakra.button
+          bg="brand.gray-1"
+          py="2"
+          px="6"
+          color="brand.primary"
+          _hover={{ color: 'brand.secondary' }}
+        >
           Hubungi Kami
         </chakra.button>
       </Box>

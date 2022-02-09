@@ -5,7 +5,7 @@ import SectionTitle from '../components/section-title';
 
 const Portofolio = () => {
   return (
-    <Container maxW="container.xl" as="section" py="20">
+    <Container maxW="container.xl" as="section" py="20" id="portfolio">
       <SectionTitle mb="16">Portfolio</SectionTitle>
       <Grid
         gridTemplateColumns="repeat(3, 1fr)"

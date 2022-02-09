@@ -1,4 +1,4 @@
-import { Header } from 'components';
+import { Footer, Header } from 'components';
 import React from 'react';
 
 const Layout: React.FC = ({ children }) => {
@@ -6,6 +6,7 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 };

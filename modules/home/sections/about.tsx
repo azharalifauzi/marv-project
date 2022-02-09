@@ -6,7 +6,7 @@ import SectionTitle from '../components/section-title';
 
 const About = () => {
   return (
-    <Container maxW="container.xl" py="20" as="section">
+    <Container maxW="container.xl" py="20" as="section" id="tentang">
       <SectionTitle mb="9">Tentang Kami</SectionTitle>
       <Text ml="7" mb="20" maxW="70%">
         MARV Studio <br /> Hadir sebagai konsultan desain interior, desain
