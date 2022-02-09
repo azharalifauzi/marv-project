@@ -143,8 +143,9 @@ const Header = () => {
             borderRadius="50%"
             bg="brand.lightblue"
             as="a"
-            href="https://instagram.com/marv"
+            href="https://instagram.com/marvstudio.id"
             role="group"
+            target="_blank"
           >
             <Icon
               as={BsInstagram}
@@ -164,8 +165,9 @@ const Header = () => {
             borderRadius="50%"
             bg="brand.lightblue"
             as="a"
-            href="https://instagram.com/marv"
+            href="https://wa.me/6281224760602?lang=id"
             role="group"
+            target="_blank"
           >
             <Icon
               as={BsWhatsapp}
@@ -185,7 +187,7 @@ const Header = () => {
             borderRadius="50%"
             bg="brand.lightblue"
             as="a"
-            href="https://instagram.com/marv"
+            href="mailto:marvstudio.id@gmail.com"
             role="group"
           >
             <Icon

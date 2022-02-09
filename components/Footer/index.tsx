@@ -37,7 +37,7 @@ const Footer = () => {
               </Link>
               <Text
                 as="a"
-                href="/"
+                href="mailto:marvstudio.id@gmail.com"
                 fontSize="sm"
                 _hover={{ color: 'brand.secondary' }}
               >
@@ -52,9 +52,10 @@ const Footer = () => {
               </Link>
               <Text
                 as="a"
-                href="https://instagram.com/marv"
+                href="https://instagram.com/marvstudio.id"
                 fontSize="sm"
                 _hover={{ color: 'brand.secondary' }}
+                target="_blank"
               >
                 Instagram
               </Text>
