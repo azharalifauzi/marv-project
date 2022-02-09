@@ -76,7 +76,7 @@ const Header = () => {
                   as="li"
                   _hover={{ color: 'brand.secondary' }}
                 >
-                  <Link href="/">
+                  <Link href="/desain-interior">
                     <a>DESAIN INTERIOR</a>
                   </Link>
                 </Box>
@@ -86,7 +86,7 @@ const Header = () => {
                   as="li"
                   _hover={{ color: 'brand.secondary' }}
                 >
-                  <Link href="/">
+                  <Link href="/desain-arsitek">
                     <a>DESAIN ARSITEK</a>
                   </Link>
                 </Box>
@@ -96,7 +96,7 @@ const Header = () => {
                   as="li"
                   _hover={{ color: 'brand.secondary' }}
                 >
-                  <Link href="/">
+                  <Link href="/jasa-pembangunan">
                     <a>JASA PEMBANGUNAN</a>
                   </Link>
                 </Box>
@@ -106,7 +106,7 @@ const Header = () => {
                   as="li"
                   _hover={{ color: 'brand.secondary' }}
                 >
-                  <Link href="/">
+                  <Link href="/kostum-furniture">
                     <a>KOSTUM FURNITURE</a>
                   </Link>
                 </Box>
@@ -118,7 +118,7 @@ const Header = () => {
               as="li"
               _hover={{ color: 'brand.secondary' }}
             >
-              <Link href="/">
+              <Link href="/portfolio">
                 <a>PORTFOLIO</a>
               </Link>
             </Box>
@@ -128,7 +128,7 @@ const Header = () => {
               as="li"
               _hover={{ color: 'brand.secondary' }}
             >
-              <Link href="/">
+              <Link href="/kontak">
                 <a>KONTAK</a>
               </Link>
             </Box>
