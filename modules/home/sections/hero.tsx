@@ -37,7 +37,7 @@ const Hero = () => {
         <Box bg="brand.primary" h="100%" />
       </Grid>
       <Box pt="140px" pl="20" mx="auto" maxW="container.xl" h="100%">
-        <Box position="relative" h="100%" w="90%" maxH="603px">
+        <Box position="relative" h="80%" w="90%" maxH="603px">
           <Flex
             alignItems="center"
             bottom="4"

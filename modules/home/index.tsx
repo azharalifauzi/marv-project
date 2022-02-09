@@ -1,5 +1,4 @@
-import { Box, Grid } from '@chakra-ui/react';
-import Image from 'next/image';
+import About from './sections/about';
 import Hero from './sections/hero';
 
 const Home = () => {
@@ -7,6 +6,7 @@ const Home = () => {
     <>
       <main>
         <Hero />
+        <About />
       </main>
     </>
   );
