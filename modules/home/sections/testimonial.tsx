@@ -24,15 +24,16 @@ const Testimonial = () => {
         <Text fontSize="2xl" fontWeight="bold" color="brand.secondary" mb="7">
           Berapa biaya desain interior?
         </Text>
-        <chakra.button
+        <chakra.a
           bg="brand.gray-1"
           py="2"
           px="6"
           color="brand.primary"
           _hover={{ color: 'brand.secondary' }}
+          href="https://wa.me/6281224760602?lang=id"
         >
           Hubungi Kami
-        </chakra.button>
+        </chakra.a>
       </Box>
     </Container>
   );
