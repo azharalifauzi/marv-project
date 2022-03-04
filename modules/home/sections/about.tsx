@@ -6,9 +6,18 @@ import SectionTitle from '../components/section-title';
 
 const About = () => {
   return (
-    <Container maxW="container.xl" py="20" as="section" id="tentang">
+    <Container
+      maxW="container.xl"
+      py={{ md: '20', base: '10' }}
+      as="section"
+      id="tentang"
+    >
       <SectionTitle mb="9">Tentang Kami</SectionTitle>
-      <Text ml="7" mb="20" maxW="70%">
+      <Text
+        ml={{ md: '7', base: '4' }}
+        mb="20"
+        maxW={{ md: '70%', base: '90%' }}
+      >
         MARV Studio <br /> Hadir sebagai konsultan desain interior, desain
         arsitek, jasa pembangunan, costum furniture dan kabinet yang berlokasi
         di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang
@@ -30,11 +39,17 @@ const About = () => {
           left: '-120px'
         }}
         ml="123px"
-        mb="112px"
+        mb={{ md: '112px', base: '12' }}
       >
         Kami memberikan <br /> pelayanan terbaik
       </Heading>
-      <Grid gridTemplateColumns="repeat(3, 1fr)" gap="20" mb="140px" px="20">
+      <Grid
+        gridTemplateColumns={{ lg: 'repeat(3, 1fr)', base: 'repeat(1, 1fr)' }}
+        columnGap="20"
+        rowGap="10"
+        mb={{ lg: '140px', base: '16' }}
+        px={{ lg: '20', base: '10' }}
+      >
         <CardService
           title="Kualitas"
           description="Marv memberikan desain dan material berkualitas dengan harga yang terjangkau"
@@ -67,8 +82,14 @@ const About = () => {
       >
         Kami memberikan <br /> pengalaman terbaik
       </Heading>
-      <Grid gridTemplateColumns="repeat(2, 1fr)" px="20">
-        <Box>
+      <Grid
+        gridTemplateColumns={{ md: 'repeat(2, 1fr)', base: '100px 1fr' }}
+        px={{ md: '20', base: '0' }}
+      >
+        <Box
+          gridColumn={{ md: '1 / 2', base: '2 / 3' }}
+          ml={{ md: '0', base: '16' }}
+        >
           <ExperienceList
             title="Perencanaan"
             description="Pada tahap perencanaan, Marv akan membantu anda untuk menetapkan desain yang sesuai dengan keinginan."
@@ -82,7 +103,14 @@ const About = () => {
             description="Tahap akhir merupakan tahap pembangunan dengan jangka waktu yang telah disepakati."
           />
         </Box>
-        <Box position="relative" h="100%" w="70%" justifySelf="flex-end">
+        <Box
+          gridColumn={{ md: '2 / 3', base: '1 / 2' }}
+          position="relative"
+          h={{ md: '100%', base: '130px' }}
+          w={{ md: '70%', base: '100%' }}
+          justifySelf="flex-end"
+          gridRow="1 / 2"
+        >
           <Image
             layout="fill"
             alt="Design Interior"

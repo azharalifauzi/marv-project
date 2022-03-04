@@ -5,12 +5,17 @@ import SectionTitle from '../components/section-title';
 
 const Portofolio = () => {
   return (
-    <Container maxW="container.xl" as="section" py="20" id="portfolio">
-      <SectionTitle mb="16">Portfolio</SectionTitle>
+    <Container
+      maxW="container.xl"
+      as="section"
+      py={{ md: '20', base: '6' }}
+      id="portfolio"
+    >
+      <SectionTitle mb={{ md: '16', base: '8' }}>Portfolio</SectionTitle>
       <Grid
-        gridTemplateColumns="repeat(3, 1fr)"
-        gridTemplateRows="539px 280px"
-        gap="20"
+        gridTemplateColumns={{ lg: 'repeat(3, 1fr)', base: 'repeat(1, 1fr)' }}
+        gridTemplateRows={{ lg: '539px 280px', base: 'repeat(4, 200px)' }}
+        gap={{ lg: '20', base: '10' }}
       >
         <Box position="relative" gridColumn="1 / -1">
           <Image
@@ -49,7 +54,7 @@ const Portofolio = () => {
           />
         </Box>
       </Grid>
-      <Box mt="8" textAlign="right">
+      <Box mt="8" textAlign={{ lg: 'right', base: 'center' }}>
         <Link href="/portfolio" passHref>
           <chakra.button
             as="a"

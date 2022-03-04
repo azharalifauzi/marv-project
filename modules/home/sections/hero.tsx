@@ -24,13 +24,23 @@ const Hero = () => {
   };
 
   return (
-    <Box as="section" h="900px" position="relative">
+    <Box as="section" h={{ md: '900px', base: '400px' }} position="relative">
+      <Box w="100%" h="100%" maxH="400px" position="relative">
+        <Image
+          src="/assets/images/dummy-hero-1.png"
+          alt="Hero Test"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </Box>
       <Grid
         position="absolute"
         zIndex="0"
         gridTemplateColumns="106px 2fr minmax(465px, 1fr)"
         h="100%"
         w="100%"
+        display={{ md: 'grid', base: 'none' }}
       >
         <Box bg="brand.primary" h="80%" alignSelf="flex-end" />
         <Box />

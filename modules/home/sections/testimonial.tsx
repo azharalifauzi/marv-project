@@ -4,9 +4,18 @@ import TestimonialCard from '../components/testimonial-card';
 
 const Testimonial = () => {
   return (
-    <Container maxW="container.xl" as="section" py="20" id="testimonial">
-      <SectionTitle mb="24">Testimonial</SectionTitle>
-      <Grid gridTemplateColumns="repeat(2, 1fr)" gap="20" mb="36">
+    <Container
+      maxW="container.xl"
+      as="section"
+      py={{ md: '20', base: '12' }}
+      id="testimonial"
+    >
+      <SectionTitle mb={{ md: '24', base: '8' }}>Testimonial</SectionTitle>
+      <Grid
+        gridTemplateColumns={{ md: 'repeat(2, 1fr)', base: '1fr' }}
+        gap={{ md: '20', base: '10' }}
+        mb={{ md: '36', base: '12' }}
+      >
         <TestimonialCard
           stars={5}
           testimony="lorem ipsum sit amet dolor"

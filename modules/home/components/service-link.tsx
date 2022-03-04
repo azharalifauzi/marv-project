@@ -12,11 +12,11 @@ const ServiceLink: React.FC<ServiceLinkProps> = ({ href, title, src }) => {
   return (
     <Link href={href}>
       <a role="group">
-        <Box position="relative" h="206px" mb="6">
+        <Box position="relative" h={{ md: '206px', base: '140px' }} mb="6">
           <Image alt="Desain Interior" layout="fill" src={src} />
         </Box>
         <Text
-          fontSize="xl"
+          fontSize={{ md: 'xl', base: 'md' }}
           fontWeight="bold"
           textAlign="center"
           _groupHover={{ color: 'brand.secondary' }}

@@ -12,6 +12,7 @@ const Footer = () => {
         py="8"
         borderTop="1px solid"
         borderColor="brand.gray-1"
+        display={{ base: 'none', lg: 'flex' }}
       >
         <Box>
           <Icon as={LogoMarvStandalone} />

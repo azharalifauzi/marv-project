@@ -4,9 +4,20 @@ import ServiceLink from '../components/service-link';
 
 const Service = () => {
   return (
-    <Container maxW="container.xl" as="section" pb="20" id="jasa-kami">
-      <SectionTitle mb="24">Jasa Kami</SectionTitle>
-      <Grid gridTemplateColumns="repeat(4, 1fr)" gap="16">
+    <Container
+      maxW="container.xl"
+      as="section"
+      pb={{ md: '20', base: '10' }}
+      id="jasa-kami"
+    >
+      <SectionTitle mb={{ md: '24', base: '12' }}>Jasa Kami</SectionTitle>
+      <Grid
+        gridTemplateColumns={{
+          md: 'repeat(4, 1fr)',
+          base: 'repeat(2, 1fr)'
+        }}
+        gap={{ md: '16', base: '8' }}
+      >
         <ServiceLink
           src="/assets/images/service-design-interior.png"
           href="/desain-interior"

@@ -11,7 +11,12 @@ const ExperienceList: React.FC<ExperienceListProps> = ({
   description
 }) => {
   return (
-    <Box maxW="400px" position="relative" pb="12" className={styles.list}>
+    <Box
+      maxW="400px"
+      position="relative"
+      pb={{ md: '12', base: '6' }}
+      className={styles.list}
+    >
       <Box
         position="absolute"
         left="-31px"
