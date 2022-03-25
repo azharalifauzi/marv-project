@@ -1,4 +1,12 @@
-import { Box, Flex, Grid, Icon, Text, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Grid,
+  Icon,
+  Text,
+  useMediaQuery,
+  VStack
+} from '@chakra-ui/react';
 import { LogoMarv } from 'components';
 import Link from 'next/link';
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
@@ -6,9 +14,11 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 import HeaderMobile from './HeaderMobile';
 
 const Header = () => {
+  const [isMobile] = useMediaQuery('(min-width: 62em)');
+
   return (
     <>
-      <HeaderMobile />
+      {!isMobile && <HeaderMobile />}
       <Box
         as="header"
         position="absolute"
@@ -24,6 +34,7 @@ const Header = () => {
           as="nav"
           alignItems="center"
           justifyContent="space-between"
+          gap="6"
         >
           <Flex alignItems="center">
             <Box mr="20">
@@ -56,6 +67,7 @@ const Header = () => {
                 _hover={{ color: 'brand.secondary' }}
                 role="group"
                 position="relative"
+                w="max-content"
               >
                 <Text cursor="pointer">JASA KAMI</Text>
                 <VStack
@@ -138,12 +150,12 @@ const Header = () => {
               </Box>
             </Grid>
           </Flex>
-          <Grid gap="14" gridTemplateColumns="repeat(3, 1fr)">
+          <Grid gap="8" gridTemplateColumns="repeat(3, 1fr)">
             <Flex
               alignItems="center"
               justifyContent="center"
-              h="16"
-              w="16"
+              h="12"
+              w="12"
               borderRadius="50%"
               bg="brand.lightblue"
               as="a"
@@ -164,8 +176,8 @@ const Header = () => {
             <Flex
               alignItems="center"
               justifyContent="center"
-              h="16"
-              w="16"
+              h="12"
+              w="12"
               borderRadius="50%"
               bg="brand.lightblue"
               as="a"
@@ -186,8 +198,8 @@ const Header = () => {
             <Flex
               alignItems="center"
               justifyContent="center"
-              h="16"
-              w="16"
+              h="12"
+              w="12"
               borderRadius="50%"
               bg="brand.lightblue"
               as="a"

@@ -14,7 +14,13 @@ const JasaPembangunan: React.FC<JasaPembangunanProps> = ({ swiperItems }) => {
 
   return (
     <main>
-      <Heading as="h1" fontSize="4xl" textAlign="center" pt="40" mb="20">
+      <Heading
+        as="h1"
+        fontSize={{ md: '4xl', base: '3xl' }}
+        textAlign="center"
+        pt="40"
+        mb="24"
+      >
         Jasa Pembangunan
       </Heading>
       <Flex justifyContent="center" mb="40">
@@ -29,16 +35,16 @@ const JasaPembangunan: React.FC<JasaPembangunanProps> = ({ swiperItems }) => {
             objectPosition="center"
           />
           <ImageDecorator
-            top="16"
+            top={{ md: '16', base: '-12' }}
             left="0"
-            transform="translateX(-50%)"
+            transform={{ md: 'translateX(-50%)', base: 'translateX(10%)' }}
             title="Pekerja yang berpengalaman"
             description="Proses pembangunan ditangani oleh pekerja dengan jam terbang yang tinggi."
           />
           <ImageDecorator
-            bottom="16"
+            bottom={{ md: '16', base: '-12' }}
             right="0"
-            transform="translateX(50%)"
+            transform={{ md: 'translateX(50%)', base: 'translateX(-10%)' }}
             title="Etos kerja tinggi"
             description="Proses pembangunan akan diawasi oleh pihak yang bertanggung jawab."
           />

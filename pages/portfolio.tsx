@@ -23,12 +23,17 @@ export const getStaticProps: GetStaticProps<PortfolioPageProps> = async () => {
 const PortfolioPage: NextPage<PortfolioPageProps> = ({ photos }) => {
   return (
     <main>
-      <Box px="20">
+      <Box px={{ md: '20', base: '6' }}>
         <Heading textAlign="center" pt="40" mb="20">
           Portfolio
         </Heading>
         <Grid
-          gridTemplateColumns="repeat(4, 1fr)"
+          gridTemplateColumns={{
+            lg: 'repeat(4, 1fr)',
+            md: 'repeat(3, 1fr)',
+            sm: 'repeat(2, 1fr)',
+            base: '1fr'
+          }}
           pb="20"
           columnGap="10"
           rowGap="6"

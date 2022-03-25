@@ -20,6 +20,7 @@ const ImageDecorator: React.FC<ImageDecoratorProps> = ({
       color="brand.white"
       px="4"
       py="2"
+      fontSize={{ md: 'md', base: 'sm' }}
     >
       <Text fontWeight="bold" mb="2">
         {title}

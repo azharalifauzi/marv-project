@@ -24,7 +24,12 @@ const KontakPage = () => {
           gap="20"
         >
           <Box>
-            <Heading maxW="370px" fontSize="3xl" as="h1" mb="9">
+            <Heading
+              maxW="370px"
+              fontSize={{ md: '3xl', base: '2xl' }}
+              as="h1"
+              mb="9"
+            >
               Konsultasi dengan MARV sekarang juga
             </Heading>
             <VStack spacing={59} alignItems="flex-start">
@@ -93,8 +98,9 @@ const KontakPage = () => {
                   alignItems="center"
                   bg="brand.primary"
                   borderRadius="50%"
-                  h="12"
-                  w="12"
+                  height="12"
+                  width="12"
+                  minW="12"
                 >
                   <Icon w="26px" h="26px" fill="brand.secondary" as={BiMap} />
                 </Flex>

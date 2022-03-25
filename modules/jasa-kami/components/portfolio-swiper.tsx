@@ -1,4 +1,11 @@
-import { AspectRatio, Box, chakra, Icon, Text } from '@chakra-ui/react';
+import {
+  AspectRatio,
+  Box,
+  chakra,
+  Icon,
+  Text,
+  useMediaQuery
+} from '@chakra-ui/react';
 import Image from 'next/image';
 import React, { useRef, useState } from 'react';
 import {
@@ -23,6 +30,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const nextRef = useRef<HTMLButtonElement>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
+  const [isLargerThan768px] = useMediaQuery('(min-width: 48em)');
 
   const handleSwiperInit = (swiper: SwiperType) => {
     const navigation = swiper.params.navigation;
@@ -39,15 +47,16 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
         role="group"
         disabled={activeIndex === 0}
         position="absolute"
-        top="50%"
+        top={{ md: '50%', base: '-8' }}
         transform="translateY(-50%)"
-        left="3"
+        left={{ md: '3', base: 'initial' }}
+        right={{ md: 'initial', base: '12' }}
         zIndex="sticky"
       >
         <Icon
           h="6"
           w="6"
-          fill="brand.gray-2"
+          fill={{ md: 'brand.gray-2', base: 'brand.secondary' }}
           as={MdOutlineArrowBackIos}
           _hover={{ fill: 'brand.secondary' }}
           _groupDisabled={{ fill: 'gray.400' }}
@@ -58,7 +67,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
         role="group"
         disabled={activeIndex === items.length}
         position="absolute"
-        top="50%"
+        top={{ md: '50%', base: '-8' }}
         transform="translateY(-50%)"
         right="3"
         zIndex="sticky"
@@ -66,7 +75,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
         <Icon
           h="6"
           w="6"
-          fill="brand.gray-2"
+          fill={{ md: 'brand.gray-2', base: 'brand.secondary' }}
           as={MdOutlineArrowForwardIos}
           _hover={{ fill: 'brand.secondary' }}
           _groupDisabled={{ fill: 'gray.400' }}
@@ -74,7 +83,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
       </chakra.button>
       <Swiper
         modules={[Navigation]}
-        spaceBetween={20}
+        spaceBetween={isLargerThan768px ? 20 : 0}
         slidesPerView="auto"
         onBeforeInit={handleSwiperInit}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -84,7 +93,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
             <Box
               textAlign="center"
               maxW="324px"
-              px="6"
+              px={{ md: '6', base: '3' }}
               role="group"
               cursor="pointer"
               onMouseOver={() =>
@@ -102,7 +111,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
               </AspectRatio>
               <Text
                 fontWeight="bold"
-                fontSize="xl"
+                fontSize={{ md: 'xl', base: 'md' }}
                 mt="7"
                 _groupHover={{ color: 'brand.secondary' }}
                 color={src === activeImage ? 'brand.secondary' : undefined}

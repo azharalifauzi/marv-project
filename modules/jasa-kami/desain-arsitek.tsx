@@ -14,7 +14,13 @@ const DesainArsitek: React.FC<DesainArsitekProps> = ({ swiperItems }) => {
 
   return (
     <main>
-      <Heading as="h1" fontSize="4xl" textAlign="center" pt="40" mb="20">
+      <Heading
+        as="h1"
+        fontSize={{ md: '4xl', base: '3xl' }}
+        textAlign="center"
+        pt="40"
+        mb="24"
+      >
         Desain Arsitek
       </Heading>
       <Flex justifyContent="center" mb="40">
@@ -29,16 +35,16 @@ const DesainArsitek: React.FC<DesainArsitekProps> = ({ swiperItems }) => {
             objectPosition="center"
           />
           <ImageDecorator
-            top="16"
+            top={{ md: '16', base: '-12' }}
             left="0"
-            transform="translateX(-50%)"
+            transform={{ md: 'translateX(-50%)', base: 'translateX(10%)' }}
             title="Arsitek Professional"
             description="Marv memiliki tim desainer arsitek berpengalaman."
           />
           <ImageDecorator
-            bottom="16"
+            bottom={{ md: '16', base: '-12' }}
             right="0"
-            transform="translateX(50%)"
+            transform={{ md: 'translateX(50%)', base: 'translateX(-10%)' }}
             title="Arsitek yang berkualitas"
             description="Marv menjamin kualitas desain arsitek untuk bangunan anda"
           />

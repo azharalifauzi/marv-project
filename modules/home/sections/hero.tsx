@@ -25,7 +25,13 @@ const Hero = () => {
 
   return (
     <Box as="section" h={{ md: '900px', base: '400px' }} position="relative">
-      <Box w="100%" h="100%" maxH="400px" position="relative">
+      <Box
+        display={{ md: 'none', base: 'block' }}
+        w="100%"
+        h="100%"
+        maxH="400px"
+        position="relative"
+      >
         <Image
           src="/assets/images/dummy-hero-1.png"
           alt="Hero Test"
@@ -46,7 +52,14 @@ const Hero = () => {
         <Box />
         <Box bg="brand.primary" h="100%" />
       </Grid>
-      <Box pt="140px" pl="20" mx="auto" maxW="container.xl" h="100%">
+      <Box
+        pt="140px"
+        pl="20"
+        mx="auto"
+        maxW="container.xl"
+        h="100%"
+        display={{ base: 'none', md: 'block' }}
+      >
         <Box position="relative" h="80%" w="90%" maxH="603px">
           <Flex
             alignItems="center"
