@@ -8,22 +8,32 @@ const Footer = () => {
     <footer>
       <Flex
         justifyContent="space-between"
-        px="106px"
+        px={{ md: '106px', base: '6' }}
         py="8"
         borderTop="1px solid"
         borderColor="brand.gray-1"
-        display={{ base: 'none', lg: 'flex' }}
+        flexDir={{ base: 'column', lg: 'row' }}
+        gap="6"
       >
         <Box>
           <Icon as={LogoMarvStandalone} />
-          <Text fontSize="sm" mt="6" maxW="264px">
+          <Text
+            display={{ md: 'block', base: 'none' }}
+            fontSize="sm"
+            mt="6"
+            maxW="264px"
+          >
             MARV Studio <br />
             Bergerak di bidang jasa desain interior, desain arsitek, jasa
             pembangunan, custom furniture dan kabinet. Marv akan memenuhi
             keinginan dan kebutuhan anda.
           </Text>
         </Box>
-        <Grid gridTemplateColumns="repeat(3, 1fr)" gap="32">
+        <Grid
+          gridTemplateColumns={{ md: 'repeat(3, 1fr)', base: '1fr' }}
+          columnGap="32"
+          rowGap="6"
+        >
           <Box>
             <Text fontWeight="bold" mb="6">
               Kontak
@@ -97,7 +107,7 @@ const Footer = () => {
               </Link>
             </VStack>
           </Box>
-          <Box>
+          <Box display={{ md: 'block', base: 'none' }}>
             <Text fontWeight="bold" mb="6">
               Tentang Kami
             </Text>
