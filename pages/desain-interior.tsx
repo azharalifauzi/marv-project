@@ -43,7 +43,7 @@ const DesainInteriorPage: NextPage<DesainInteriorPageProps> = ({
         />
         <link rel="canonical" href="https://marvproject.com/desain-interior" />
       </Head>
-      <RenderPage swiperItems={swiperItems} />;
+      <RenderPage swiperItems={swiperItems} />
     </>
   );
 };

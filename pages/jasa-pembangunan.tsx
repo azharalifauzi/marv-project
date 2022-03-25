@@ -43,7 +43,7 @@ const JasaPembangunanPage: NextPage<JasaPembangunanPageProps> = ({
         />
         <link rel="canonical" href="https://marvproject.com/jasa-pembangunan" />
       </Head>
-      <RenderPage swiperItems={swiperItems} />;
+      <RenderPage swiperItems={swiperItems} />
     </>
   );
 };

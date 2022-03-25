@@ -43,7 +43,7 @@ const DesainArsitekPage: NextPage<DesainArsitekPageProps> = ({
         />
         <link rel="canonical" href="https://marvproject.com/desain-arsitek" />
       </Head>
-      <RenderPage swiperItems={swiperItems} />;
+      <RenderPage swiperItems={swiperItems} />
     </>
   );
 };

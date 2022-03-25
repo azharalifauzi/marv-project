@@ -43,7 +43,7 @@ const CustomFurniturePage: NextPage<CustomFurniturePageProps> = ({
         />
         <link rel="canonical" href="https://marvproject.com/custom-furniture" />
       </Head>
-      <RenderPage swiperItems={swiperItems} />;
+      <RenderPage swiperItems={swiperItems} />
     </>
   );
 };
