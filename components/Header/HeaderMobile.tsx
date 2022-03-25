@@ -46,7 +46,6 @@ const HeaderMobile = () => {
       left="0"
       height="20"
       background="brand.primary"
-      as="header"
       display={{ lg: 'none', base: 'flex' }}
       w="100%"
       alignItems="center"

@@ -2,6 +2,7 @@ import { GetStaticProps, NextPage } from 'next';
 import fs from 'fs/promises';
 import RenderPage from 'modules/jasa-kami/desain-arsitek';
 import path from 'path';
+import Head from 'next/head';
 
 interface DesainArsitekPageProps {
   swiperItems: PortfolioSwiperItem[];
@@ -28,7 +29,23 @@ export const getStaticProps: GetStaticProps<
 const DesainArsitekPage: NextPage<DesainArsitekPageProps> = ({
   swiperItems
 }) => {
-  return <RenderPage swiperItems={swiperItems} />;
+  return (
+    <>
+      <Head>
+        <title>Desain Arsitek</title>
+        <meta
+          name="description"
+          content="Marv memiliki tim desainer arsitek berpengalaman. Marv menjamin kualitas desain arsitek untuk bangunan anda."
+        />
+        <meta
+          property="og:description"
+          content="Marv memiliki tim desainer arsitek berpengalaman. Marv menjamin kualitas desain arsitek untuk bangunan anda."
+        />
+        <link rel="canonical" href="https://marvproject.com/desain-arsitek" />
+      </Head>
+      <RenderPage swiperItems={swiperItems} />;
+    </>
+  );
 };
 
 export default DesainArsitekPage;

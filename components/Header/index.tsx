@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Grid,
-  Icon,
-  Text,
-  useMediaQuery,
-  VStack
-} from '@chakra-ui/react';
+import { Box, Flex, Grid, Icon, Text, VStack } from '@chakra-ui/react';
 import { LogoMarv } from 'components';
 import Link from 'next/link';
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
@@ -14,13 +6,9 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 import HeaderMobile from './HeaderMobile';
 
 const Header = () => {
-  const [isMobile] = useMediaQuery('(min-width: 62em)');
-
   return (
-    <>
-      {!isMobile && <HeaderMobile />}
+    <header>
       <Box
-        as="header"
         position="absolute"
         top="0"
         left="0"
@@ -219,7 +207,8 @@ const Header = () => {
           </Grid>
         </Flex>
       </Box>
-    </>
+      <HeaderMobile />
+    </header>
   );
 };
 
