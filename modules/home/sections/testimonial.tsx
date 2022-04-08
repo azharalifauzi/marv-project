@@ -18,15 +18,15 @@ const Testimonial = () => {
       >
         <TestimonialCard
           stars={5}
-          testimony="lorem ipsum sit amet dolor"
-          name="Suparman"
-          title="Head of Security Batam Center"
+          testimony="Hasil desain sesuai dengan keinginan dan cepat diproses. Desainernya komunikatif. Terimakasih Marvstudio."
+          name="Mr. Saddan"
+          title="Entrepreneur"
         />
         <TestimonialCard
           stars={5}
-          testimony="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem qui voluptatum repudiandae eos alias nisi quae cum expedita, voluptatibus quidem rem quaerat earum deleniti error doloribus. Consectetur praesentium vitae veniam."
-          name="Saykoji"
-          title="Professioinal Rapper"
+          testimony="Kualitas terjamin, rapih, pengerjaan tepat waktu dan recommended sekali."
+          name="Mr. Beni"
+          title="Professional Lecturer"
         />
       </Grid>
       <Box textAlign="center" bg="brand.primary" py="8" maxW="790" mx="auto">
@@ -39,7 +39,9 @@ const Testimonial = () => {
           px="6"
           color="brand.primary"
           _hover={{ color: 'brand.secondary' }}
-          href="https://wa.me/6281224760602?lang=id"
+          href="https://wa.me/6282216461866?lang=id"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Hubungi Kami
         </chakra.a>

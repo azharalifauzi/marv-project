@@ -19,7 +19,7 @@ const About = () => {
         maxW={{ md: '70%', base: '90%' }}
       >
         MARV Studio <br /> Hadir sebagai konsultan desain interior, desain
-        arsitek, jasa pembangunan, costum furniture dan kabinet yang berlokasi
+        arsitek, jasa pembangunan, custom furniture dan kabinet yang berlokasi
         di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang
         professional di bidangnya maka dari itu Marv berkomitmen untuk selalu
         dapat memenuhi keinginan dan kebutuhan customer.{' '}

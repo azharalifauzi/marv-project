@@ -111,7 +111,7 @@ const Header = () => {
                     _hover={{ color: 'brand.secondary' }}
                   >
                     <Link href="/custom-furniture">
-                      <a>KOSTUM FURNITURE</a>
+                      <a>CUSTOM FURNITURE</a>
                     </Link>
                   </Box>
                 </VStack>
@@ -169,7 +169,7 @@ const Header = () => {
               borderRadius="50%"
               bg="brand.lightblue"
               as="a"
-              href="https://wa.me/6281224760602?lang=id"
+              href="https://wa.me/6282216461866?lang=id"
               role="group"
               target="_blank"
             >
@@ -191,7 +191,7 @@ const Header = () => {
               borderRadius="50%"
               bg="brand.lightblue"
               as="a"
-              href="mailto:marvstudio.id@gmail.com"
+              href="mailto:marvstudio.design@gmail.com "
               role="group"
             >
               <Icon

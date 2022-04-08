@@ -114,7 +114,7 @@ const HeaderMobile = () => {
                     <a>JASA PEMBANGUNAN</a>
                   </Link>
                   <Link href="/custom-furniture">
-                    <a>KUSTOM FURNITURE</a>
+                    <a>CUSTOM FURNITURE</a>
                   </Link>
                 </>
               )}

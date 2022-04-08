@@ -9,11 +9,11 @@ const Home: NextPage = () => {
         <title>Marv Studio | Arsitektur, Interior, dan Furniture</title>
         <meta
           name="description"
-          content="MARV Studio Hadir sebagai konsultan desain interior, desain arsitek, jasa pembangunan, costum furniture dan kabinet yang berlokasi di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang professional di bidangnya maka dari itu Marv berkomitmen untuk selalu dapat memenuhi keinginan dan kebutuhan customer."
+          content="MARV Studio Hadir sebagai konsultan desain interior, desain arsitek, jasa pembangunan, custom furniture dan kabinet yang berlokasi di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang professional di bidangnya maka dari itu Marv berkomitmen untuk selalu dapat memenuhi keinginan dan kebutuhan customer."
         />
         <meta
           property="og:description"
-          content="MARV Studio Hadir sebagai konsultan desain interior, desain arsitek, jasa pembangunan, costum furniture dan kabinet yang berlokasi di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang professional di bidangnya maka dari itu Marv berkomitmen untuk selalu dapat memenuhi keinginan dan kebutuhan customer."
+          content="MARV Studio Hadir sebagai konsultan desain interior, desain arsitek, jasa pembangunan, custom furniture dan kabinet yang berlokasi di Bandung dan Makassar. Marv Memiliki designer dan arsitek yang professional di bidangnya maka dari itu Marv berkomitmen untuk selalu dapat memenuhi keinginan dan kebutuhan customer."
         />
         <link rel="canonical" href="https://marvproject.com" />
       </Head>

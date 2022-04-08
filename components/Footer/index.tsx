@@ -48,7 +48,7 @@ const Footer = () => {
               </Link>
               <Text
                 as="a"
-                href="mailto:marvstudio.id@gmail.com"
+                href="mailto:marvstudio.design@gmail.com "
                 fontSize="sm"
                 _hover={{ color: 'brand.secondary' }}
               >
@@ -101,7 +101,7 @@ const Footer = () => {
               <Link href="/custom-furniture">
                 <a>
                   <Text fontSize="sm" _hover={{ color: 'brand.secondary' }}>
-                    Kostum Furniture
+                    Custom Furniture
                   </Text>
                 </a>
               </Link>

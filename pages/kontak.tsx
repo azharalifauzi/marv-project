@@ -67,7 +67,7 @@ const KontakPage = () => {
                     <Text fontWeight="bold" mb="1">
                       Email
                     </Text>
-                    <Text>marvstudio.id@gmail.com</Text>
+                    <Text>marvstudio.design@gmail.com </Text>
                   </Box>
                 </Flex>
                 <Flex gap="12">
@@ -85,7 +85,7 @@ const KontakPage = () => {
                     <Text fontWeight="bold" mb="1">
                       Telepon
                     </Text>
-                    <Text>+62 812 2476 0602</Text>
+                    <Text>+62 822 1646 1866</Text>
                   </Box>
                 </Flex>
                 <Flex gap="12">
@@ -122,7 +122,6 @@ const KontakPage = () => {
                     <Text fontWeight="bold" mb="1">
                       Lokasi
                     </Text>
-                    <Text mb="8">Jl. Pelangi No. 31 Kota Bandung</Text>
                     <Text>Jl. Baji Rupa No. 11 B Kota Makassar</Text>
                   </Box>
                 </Flex>
