@@ -12,7 +12,7 @@ export const getStaticProps: GetStaticProps<
   JasaPembangunanPageProps
 > = async () => {
   const photos = await fs.readdir(
-    path.join(process.cwd(), '/public/assets/images')
+    path.join(process.cwd(), '/public/assets/images/jasa-pembangunan')
   );
   const swiperItems: PortfolioSwiperItem[] = photos.map((photo) => ({
     alt: photo,

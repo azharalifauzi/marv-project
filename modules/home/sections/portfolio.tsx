@@ -14,43 +14,48 @@ const Portofolio = () => {
       <SectionTitle mb={{ md: '16', base: '8' }}>Portfolio</SectionTitle>
       <Grid
         gridTemplateColumns={{ lg: 'repeat(3, 1fr)', base: 'repeat(1, 1fr)' }}
-        gridTemplateRows={{ lg: '539px 280px', base: 'repeat(4, 200px)' }}
+        gridTemplateRows={{
+          lg: '700px 280px',
+          md: 'repeat(4, 480px)',
+          sm: 'repeat(4, 320px)',
+          base: 'repeat(4, 200px)'
+        }}
         gap={{ lg: '20', base: '10' }}
       >
         <Box position="relative" gridColumn="1 / -1">
           <Image
             alt="portoflio marv"
-            src="/assets/images/home-portfolio-1.png"
+            src="/assets/images/home/portfolio/1.JPG"
             layout="fill"
             objectFit="cover"
-            objectPosition="center"
+            objectPosition="bottom"
           />
         </Box>
         <Box position="relative">
           <Image
             alt="portoflio marv"
-            src="/assets/images/home-portfolio-2.png"
+            src="/assets/images/home/portfolio/2.JPG"
             layout="fill"
             objectFit="cover"
-            objectPosition="center"
+            objectPosition="bottom"
           />
         </Box>
         <Box position="relative">
           <Image
             alt="portoflio marv"
-            src="/assets/images/home-portfolio-3.png"
+            src="/assets/images/home/portfolio/3.JPG"
             layout="fill"
             objectFit="cover"
-            objectPosition="center"
+            objectPosition="bottom"
           />
         </Box>
         <Box position="relative">
           <Image
             alt="portoflio marv"
-            src="/assets/images/home-portfolio-4.png"
+            src="/assets/images/home/portfolio/4.JPG"
             layout="fill"
             objectFit="cover"
-            objectPosition="center"
+            objectPosition="bottom"
           />
         </Box>
       </Grid>

@@ -26,13 +26,12 @@ const CustomFurniture: React.FC<CustomFurnitureProps> = ({ swiperItems }) => {
       <Flex justifyContent="center" mb="40">
         <Box h="473px" maxW="742px" w="90%" position="relative">
           <Image
-            src={`/assets/images/${
+            src={`/assets/images/custom-furniture/${
               !activeImage ? swiperItems[0].src : activeImage
             }`}
             layout="fill"
             alt="desain interior"
-            objectFit="cover"
-            objectPosition="center"
+            objectFit="contain"
           />
           <ImageDecorator
             top={{ md: '16', base: '-12' }}
@@ -54,6 +53,7 @@ const CustomFurniture: React.FC<CustomFurnitureProps> = ({ swiperItems }) => {
         items={swiperItems}
         onMouseOverItem={(src) => setActiveImage(src)}
         activeImage={activeImage}
+        pathToFolder="/assets/images/custom-furniture/"
       />
     </main>
   );

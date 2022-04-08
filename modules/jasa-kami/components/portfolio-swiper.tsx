@@ -20,12 +20,14 @@ interface PortfolioSwiperProps {
   items: PortfolioSwiperItem[];
   onMouseOverItem?: (src: string) => void;
   activeImage?: string;
+  pathToFolder: string;
 }
 
 const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
   items,
   onMouseOverItem,
-  activeImage
+  activeImage,
+  pathToFolder
 }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -102,7 +104,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
             >
               <AspectRatio position="relative" ratio={1 / 1}>
                 <Image
-                  src={`/assets/images/${src}`}
+                  src={`${pathToFolder}${src}`}
                   alt={alt}
                   layout="fill"
                   objectFit="cover"
@@ -116,7 +118,7 @@ const PortfolioSwiper: React.FC<PortfolioSwiperProps> = ({
                 _groupHover={{ color: 'brand.secondary' }}
                 color={src === activeImage ? 'brand.secondary' : undefined}
               >
-                Lorem Ipsum
+                {/* Lorem Ipsum */}
               </Text>
             </Box>
           </SwiperSlide>

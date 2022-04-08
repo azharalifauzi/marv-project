@@ -33,8 +33,8 @@ const Hero = () => {
         position="relative"
       >
         <Image
-          src="/assets/images/dummy-hero-1.png"
-          alt="Hero Test"
+          src="/assets/images/hero/1.JPG"
+          alt="Marv Design Interior"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
@@ -102,22 +102,22 @@ const Hero = () => {
             <SwiperSlide>
               <Box w="100%" h="100%" maxH="603px" position="relative">
                 <Image
-                  src="/assets/images/dummy-hero-1.png"
-                  alt="Hero Test"
+                  src="/assets/images/hero/1.JPG"
+                  alt="Marv Design Interior"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
+                  objectPosition="bottom"
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box w="100%" h="100%" maxH="603px" position="relative">
                 <Image
-                  src="/assets/images/dummy-hero-2.jpg"
-                  alt="Hero Test"
+                  src="/assets/images/hero/2.JPG"
+                  alt="Marv Design Interior"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
+                  objectPosition="bottom"
                 />
               </Box>
             </SwiperSlide>

@@ -12,7 +12,7 @@ export const getStaticProps: GetStaticProps<
   CustomFurniturePageProps
 > = async () => {
   const photos = await fs.readdir(
-    path.join(process.cwd(), '/public/assets/images')
+    path.join(process.cwd(), '/public/assets/images/custom-furniture')
   );
   const swiperItems: PortfolioSwiperItem[] = photos.map((photo) => ({
     alt: photo,

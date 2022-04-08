@@ -1,27 +1,59 @@
-import { AspectRatio, Box, Grid, Heading } from '@chakra-ui/react';
+import {
+  AspectRatio,
+  Box,
+  Button,
+  Grid,
+  Heading,
+  chakra
+} from '@chakra-ui/react';
 import { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import path from 'path';
 import fs from 'fs/promises';
 import Head from 'next/head';
+import { useState } from 'react';
 
 interface PortfolioPageProps {
   photos: string[];
 }
 
 export const getStaticProps: GetStaticProps<PortfolioPageProps> = async () => {
-  const photos = await fs.readdir(
-    path.join(process.cwd(), '/public/assets/images')
-  );
+  const customFurnitures = (
+    await fs.readdir(
+      path.join(process.cwd(), '/public/assets/images/custom-furniture')
+    )
+  ).map((path) => `/assets/images/custom-furniture/${path}`);
+  const designArchitectures = (
+    await fs.readdir(
+      path.join(process.cwd(), '/public/assets/images/desain-arsitek')
+    )
+  ).map((path) => `/assets/images/desain-arsitek/${path}`);
+  const designInteriors = (
+    await fs.readdir(
+      path.join(process.cwd(), '/public/assets/images/desain-interior')
+    )
+  ).map((path) => `/assets/images/desain-interior/${path}`);
+  const buildServices = (
+    await fs.readdir(
+      path.join(process.cwd(), '/public/assets/images/jasa-pembangunan')
+    )
+  ).map((path) => `/assets/images/jasa-pembangunan/${path}`);
 
   return {
     props: {
-      photos
+      photos: [
+        ...customFurnitures,
+        ...designArchitectures,
+        ...designInteriors,
+        ...buildServices
+      ]
     }
   };
 };
 
 const PortfolioPage: NextPage<PortfolioPageProps> = ({ photos }) => {
+  const [page, setPage] = useState(1);
+
   return (
     <>
       <Head>
@@ -49,10 +81,10 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ photos }) => {
             columnGap="10"
             rowGap="6"
           >
-            {photos.map((photo) => (
+            {photos.slice(0, 16 * page).map((photo) => (
               <AspectRatio key={photo} ratio={1 / 1} position="relative">
                 <Image
-                  src={`/assets/images/${photo}`}
+                  src={photo}
                   alt={photo}
                   layout="fill"
                   objectFit="cover"
@@ -61,6 +93,20 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ photos }) => {
               </AspectRatio>
             ))}
           </Grid>
+          <Box textAlign="center" mb="8">
+            {page * 16 < photos.length && (
+              <chakra.button
+                bg="brand.primary"
+                color="brand.secondary"
+                px="6"
+                py="3"
+                borderRadius="2px"
+                onClick={() => setPage(page + 1)}
+              >
+                Lihat Lebih Banyak
+              </chakra.button>
+            )}
+          </Box>
         </Box>
       </main>
     </>
